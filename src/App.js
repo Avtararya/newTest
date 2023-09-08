@@ -10,29 +10,29 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 const columns = [
-  { field: "CustomerID", headerName: "Customer ID", width: 120 },
+  { field: "customer_id", headerName: "Customer ID", width: 120 },
   {
-    field: "Genre",
+    field: "genre",
     headerName: "Genre",
     width: 120,
     editable: true,
   },
   {
-    field: "Age",
+    field: "age",
     headerName: "Age",
     type: "number",
     width: 120,
     editable: true,
   },
   {
-    field: "Annual_Income_(k$)",
+    field: "annual_income",
     headerName: "Annual Income (k$)",
     type: "number",
     width: 160,
     editable: true,
   },
   {
-    field: "Spending_Score",
+    field: "spending_score",
     headerName: "Spending Score",
     type: "number",
     width: 160,
@@ -137,7 +137,7 @@ export default function DataGridDemo() {
         pageSize={5}
         checkboxSelection
         disableSelectionOnClick
-        getRowId={(row) => row.CustomerID}
+        getRowId={(row) => row.customer_id}
       />
     </Box>
   );
